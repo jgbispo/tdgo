@@ -8,7 +8,7 @@
 </p>
 
 ## Binary install ⚙️
-  ### coming soon
+  [Download](https://github.com/jgbispo/tdgo/releases/tag/v1.0.0)
   
 ## Installation manual ⚙️
 
