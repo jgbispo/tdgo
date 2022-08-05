@@ -47,6 +47,7 @@ func main() {
 			fmt.Fprint(os.Stderr, err.Error())
 			os.Exit(1)
 		}
+		todos.Print()
 	case *done > 0:
 		err := todos.Complete(*done)
 		if err != nil {
@@ -58,6 +59,7 @@ func main() {
 			fmt.Fprint(os.Stderr, err.Error())
 			os.Exit(1)
 		}
+		todos.Print()
 	case *del > 0:
 		err := todos.Delete(*del)
 		if err != nil {
@@ -69,6 +71,7 @@ func main() {
 			fmt.Fprint(os.Stderr, err.Error())
 			os.Exit(1)
 		}
+		todos.Print()
 	case *list:
 		todos.Print()
 	case *work > 0:
@@ -82,6 +85,7 @@ func main() {
 			fmt.Fprint(os.Stderr, err.Error())
 			os.Exit(1)
 		}
+		todos.Print()
 	default:
 		fmt.Fprintln(os.Stdout, "Invalid command")
 		os.Exit(0)
